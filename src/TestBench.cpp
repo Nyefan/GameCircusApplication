@@ -39,7 +39,7 @@ void testQ1() {
 void testQ2() {
 	Q2 testQ2 = Q2();
 	char* str [5];
-	str[0] = "pRa gmA tic"; 	//should anagram itself, 0, and 4
+	str[0] = "pRa gmA tic"; 	//should anagram itself, 1, and 4
 	str[1] = "ta mga rc ip"; 	//should anagram itself, 0, and 4
 	str[2] = "Gra Mat ic";  	//should only anagram itself
 	str[3] = " Pragmatic p "; 	//should only anagram itself
