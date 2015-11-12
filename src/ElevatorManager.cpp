@@ -103,11 +103,11 @@ bool ElevatorManager::QueueIsEmpty() {
 bool ElevatorManager::QueueAboveIsEmpty() {
 	for (int i = lastFloor; i < numFloors; i++) {
 		if(floorCalls[i]) {nextAvailableFloor = i; return false;}
-	} return true;
+	} nextAvailableFloor = -1; return true;
 }
 
 bool ElevatorManager::QueueBelowIsEmpty() {
 	for (int i = lastFloor; i >= 0; i--) {
 		if(floorCalls[i]) {nextAvailableFloor = i; return false;}
-	} return true;
+	} nextAvailableFloor = -1; return true;
 }
